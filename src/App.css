@@ -1,38 +1,105 @@
 .App {
-  text-align: center;
+	text-align: center;
+}
+.header {
+	margin-bottom: 3rem;
+	width: 100%;
+	/* border: 1px solid black; */
+}
+h1 {
+	font-size: 2.5rem;
+	margin-bottom: 0.5rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.border {
+	width: 7rem;
+	border-top: 0.3rem solid rgba(0, 0, 255, 0.5);
+	margin: auto;
+}
+.loading {
+	font-size: 5rem;
+}
+.person {
+	padding: 1.5rem;
+	margin: auto;
+	width: 30rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.img-cont {
+	background: rgba(75, 75, 237, 0.7);
+	width: 10rem;
+	height: 10rem;
+	border-radius: 50%;
+	margin: auto;
+	position: relative;
+}
+img {
+	width: 10rem;
+	height: 10rem;
+	border-radius: 50%;
+	position: absolute;
+	right: 0.6rem;
+	top: 0.4rem;
+}
+.quote {
+	color: white;
+	background: rgb(75, 75, 237);
+	position: absolute;
+	z-index: 2;
+	padding: 0.5rem 0.7rem;
+	border-radius: 50%;
+	top: -1rem;
+}
+.name {
+	text-transform: capitalize;
+	margin-bottom: 0;
+}
+.email {
+	text-transform: uppercase;
+	margin: 0.3rem 0;
+	color: rgb(75, 75, 237);
+}
+.body {
+	text-transform: capitalize;
+}
+.angles {
+	width: 5rem;
+	margin: auto;
+	display: flex;
+	font-size: 2rem;
+	justify-content: space-around;
+}
+.sub-angles {
+	margin: 0;
+	color: rgba(75, 75, 237, 0.8);
+	cursor: pointer;
+}
+.sub-angles:hover {
+	color: rgb(75, 75, 237);
+}
+button {
+	margin: 1rem auto;
+	padding: 0.5rem 1rem;
+	width: fit-content;
+	border-color: rgb(75, 75, 237);
+	color: rgb(75, 75, 237);
+	background: transparent;
+	border-radius: 0.4rem;
+	cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button:hover {
+	border-color: rgba(75, 75, 237, 0.6);
+	color: rgba(75, 75, 237, 0.6);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+@media screen and (max-width: 480px) {
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  .person{
+    width: 20rem;
+    box-shadow: none;
   }
 }
